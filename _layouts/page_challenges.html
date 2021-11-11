@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<!--
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+{% assign challenges_sorted = site.challenges | sort: 'added' | reverse  %}
+
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                {% include header.html %}
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h1>{{ page.title }}</h1>
+                    </header>
+
+                    {% if page.image %}
+                        <span class="image main"><img src="{{site.url}}{{site.baseurl}}/{{page.image}}" alt="" /></span>
+                    {% endif %}
+
+                    {{ content }}
+
+                    <section>
+                        <header class="major">
+                          <h2>Challenges</h2>
+                        </header>
+                        <div class="posts">
+                        {% for item in challenges_sorted %}
+                          <article>
+                            <h3>{{ item.title }}: {{item.headline}}</h3>
+                            <a href="{{item.ramp_url}}" class="image"><img src="{{site.url}}{{site.baseurl}}/images/resources/{{item.icon}}" alt="" /></a>
+                            <p>{{ item.teasing }}</p>
+                            <ul class="actions">
+                                <center>
+                                <li><a href="{{item.ramp_url}}" class="button medium">More</a></li>
+                                </center>
+                            </ul>
+                          </article>
+                        {% endfor %}
+                        </div>
+                    </section>
+
+            </div>
+        </div>
+
+        {% include sidebar.html %}
+
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
