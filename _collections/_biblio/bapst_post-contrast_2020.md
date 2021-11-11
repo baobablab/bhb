@@ -1,11 +1,11 @@
 ---
-cat: metric
-subcat: metric
-bestof: false
-author: Blanche Bapst et al.
-title: Post-contrast 3D T1-weighted TSE MR sequences (SPACE, CUBE, VISTA/BRAINVIEW, isoFSE, 3D MVOX) - Technical aspects and clinical applications
-journal: Journal of Neuroradiology = Journal De Neuroradiologie
-year: 2020
+cat: bhb
+subcat: data
+bestof: true
+author: B. Dufumier et al.
+title: BHB 10k dataset
+journal: NeuroImage
+year: 2022
 type: article
-doi: 10.1016/j.neurad.2020.01.085
+doi: 
 ---

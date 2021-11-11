@@ -1,7 +1,8 @@
 ---
-layout: page_select
 title:
-permalink: /people/
+layout: page_select
+entry: people
+permalink: /people.html
 ---
 
 {% assign people_sorted = site.people | sort: 'joined' %}

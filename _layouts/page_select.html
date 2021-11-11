@@ -8,46 +8,6 @@
 
 {% include head.html %}
 
-{% assign labs_sorted = site.labs | sort: "cat" %}
-{% assign unique_labs = '' | split: ',' %}
-{% for lab in labs_sorted %}
-  {% if lab.subcat == "team" %}
-      {% unless lab.cat == previous %}
-        {% assign key = "~" | append: lab.cat %}
-        {% assign unique_labs = unique_labs | push: key %}
-      {% endunless %}
-      {% assign unique_labs = unique_labs | push: lab.title %}
-      {% assign previous = lab.cat %}
-  {% endif %}
-{% endfor %}
-
-<script>
-$(document).ready(function() {
-    var content = "<option>Choose</option>"
-    {% for lab in unique_labs %}
-        {% if lab contains "~" %}
-            {% assign key = lab | replace: "~", "" %}
-            content += "<option value='{{key|downcase|replace: " ", "-"}}'>{{key|upcase}}</option>"
-        {% else %}
-            content += "<option value='{{lab|downcase|replace: " ", "-"}}'>&nbsp;&nbsp;&nbsp;&nbsp;{{lab|downcase}}</option>"
-        {% endif %}       
-    {% endfor %}
-    $(".dropdown-menu").html(content)
-    $(".dropdown-menu").change(function () {
-        var lab = this.value;
-        {% for lab in unique_labs %}
-            {% assign key = lab | replace: "~", "" %}
-            if (lab == "Choose") {
-                $(".{{key|downcase|replace: " ", "-"}}").show();
-            } else {
-                $(".{{key|downcase|replace: " ", "-"}}").hide();
-            } 
-        {% endfor %}
-        $("." + lab).show();
-    });
-});
-</script>
-
 <body>
 
     <!-- Wrapper -->
@@ -86,5 +46,49 @@ $(document).ready(function() {
     {% include footer.html %}
 
 </body>
+
+{% assign items = site[page.entry] %}
+{% assign items_sorted = items | sort: "cat" %}
+{% assign unique_items = '' | split: ',' %}
+{% assign current_unique_items = '' | split: ',' %}
+{% for item in items_sorted %}
+      {% unless item.cat == previous %}
+        {% assign key = "~" | append: item.cat %}
+        {% assign unique_items = unique_items | push: key %}
+        {% assign current_unique_items = '' | split: ',' %}
+      {% endunless %}
+      {% unless current_unique_items contains item.subcat %}
+        {% assign unique_items = unique_items | push: item.subcat %}
+        {% assign current_unique_items = current_unique_items | push: item.subcat %}
+      {% endunless %}
+      {% assign previous = item.cat %}
+{% endfor %}
+
+<script>
+$(document).ready(function() {
+    var content = "<option>Choose</option>"
+    {% for item in unique_items %}
+        {% if item contains "~" %}
+            {% assign key = item | replace: "~", "" %}
+            content += "<option value='{{key|downcase|replace: " ", "-"}}'>{{key|upcase}}</option>"
+        {% else %}
+            content += "<option value='{{item|downcase|replace: " ", "-"}}'>&nbsp;&nbsp;&nbsp;&nbsp;{{item|downcase}}</option>"
+        {% endif %}       
+    {% endfor %}
+    $(".dropdown-menu").html(content)
+    $(".dropdown-menu").change(function () {
+        var item = this.value;
+        {% for item in unique_items %}
+            {% assign key = item | replace: "~", "" %}
+            if (item == "Choose") {
+                $(".{{key|downcase|replace: " ", "-"}}").show();
+            } else {
+                $(".{{key|downcase|replace: " ", "-"}}").hide();
+            } 
+        {% endfor %}
+        $("." + item).show();
+    });
+});
+</script>
 
 </html>

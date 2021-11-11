@@ -1,12 +1,13 @@
 
 # Site settings
-title: BAOBAB
-subtitle: Team slogan
-baseurl: baobab
+title: BHB
+subtitle: Big Healthy Brains
+baseurl: bhb
 url: https://baobablab.github.io/
 
+
 # Contacts
-email: jean-francois.mangin@cea.fr
+email: edouard.duchesnay@cea.fr
 author:
 street_address:
 city:
@@ -16,8 +17,8 @@ country: France
 phone:
 
 # Index
-short_desc: A short description
-long_desc: Difficulty on insensible reasonable in. From as went he they. Preference themselves me as thoroughly partiality considered on in estimating. Middletons acceptance discovered projecting so is so or. In or attachment inquietude remarkably comparison at an. Is surrounded prosperous stimulated am me discretion expression. But truth being state can she china widow. Occasional preference fat remarkably now projecting uncommonly dissimilar. Sentiments projection particular companions interested do at my delightful. Listening newspaper in advantage frankness to concluded unwilling.
+short_desc: BHB-10K dataset
+long_desc: As of today, Big Healthy Brains (BHB)-10K dataset is an aggregation of 13 publicly available datasets of 3D T1 brain MRI scans of healthy controls (HC) acquired on more than 70 different scanners and comprising N=10K individuals All datasets are pre-processed uniformaly comprising VBM, Quasi-Raw, ... This study is intended to be extended in the future. Please refer to the roadmap to get an overall view of the BHB-10K evolution plan.
 
 # Expiration in days
 expiration_opportunities: 200
@@ -42,7 +43,7 @@ markdown: kramdown
 collections_dir: _collections
 collections:
 
-  opportunities:
+  challenges:
     output    : true
     permalink : /:collection/:path
 
@@ -62,11 +63,7 @@ collections:
     output    : true
     permalink : /biblio/:title/index.html
 
-  research:
+  benchmarks:
     output    : true
     permalink : /research/:title/index.html
-
-  labs:
-    output    : true
-    permalink : /labs/:title/index.html
 
