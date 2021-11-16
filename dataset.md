@@ -19,6 +19,8 @@ image: preproc.png
 
 BHB-10K is an aggregation of 13 pubicly available brain MRI datasets of healthy controls (HC).
 
+<div style="overflow-x:scroll" markdown="1">
+
 **Available** | **Source**  | **# Subjects**  | **# Sessions** | **Age** | **Sex (\%F)** | **# Sites**
 |:---:|:---: | :---: | :---: | :---: | :---: | :---: | 
 ❌ | [HCP](https://www.humanconnectome.org/study/hcp-young-adult)  | 1113 | 1113 | 29 ± 4 | 45 | 1
@@ -35,16 +37,22 @@ BHB-10K is an aggregation of 13 pubicly available brain MRI datasets of healthy 
 ❌ | [Localizer](http://brainomics.cea.fr/localizer/localizer) | 82 | 82 | 25 ± 7 | 56 | 2
 ❌ | [MPI-Leipzig](https://openneuro.org/datasets/ds000221/versions/00002) | 316 | 316 | 37 ± 19 | 40 | 2
 **Total** | | 7764 | **10420** | 32 ± 19 | 50 | 74 
-**Currently** | | 0 | 0 | 0 | 0 | 0  
+**Currently** | | 0 | 0 | 0 | 0 | 0
+
+</div>
 
 ### Clinical datasets
 
 BHB-10K contains also clinical datasets composed of only schizophrenia data for the moment.
 
+<div style="overflow-x:scroll" markdown="1">
+
 **Available** | **Source**  | **# Subjects** | **Diagnosis** | **Age** | **Sex (\%F)** | **# Sites**
 :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 ❌| [BSNIP](https://academic.oup.com/schizophreniabulletin/article/40/Suppl_2/S131/1933599)  | 394 | Schizophrenia<br>Control | 34 ± 12<br>38 ± 13  | 44<br>58  | 5 
 ❌| [SCHIZCONNECT-VIP](http://schizconnect.org) | 605 | Schizophrenia<br>Control | 34 ± 12<br>32 ± 12  | 27<br>47  | 4 
+
+</div>
 
 ### Pre-processed datasets
 
@@ -60,6 +68,7 @@ The brain is segmented into 3 tissues: Gray Matter (GM), White Matter (WM) and C
 non-linearly to the MNI template with [DARTEL](https://pubmed.ncbi.nlm.nih.gov/17761438) resampled at 1.5mm isotropic.
  We used only the T1-weighted modulated GM modality.  
 
+<div style="overflow-x:scroll" markdown="1">
 
 **Dataset** | **Pre-Processing** | **# Images** | **Target**|  **Link** 
 |:---:|:---:|:---:|:---:|:---:|
@@ -68,11 +77,14 @@ BHB-10K | VBM | ? | Age + Sex | ? |
 SCHIZCONNECT-VIP | Quasi-Raw | 605 | SCZ vs CTL | *Pending* |
 SCHIZCONNECT-VIP | VBM | 605 | SCZ vs CTL | *Pending*|
 
+</div>
 
 ### Training/test split
 
 We aim at giving results in the real clinical setting where the model is evaluated on new data arriving from
 different hospitals (different acquisition protocols). 
+
+<div style="overflow-x:scroll" markdown="1">
 
 Task | Training Set | Test Sets | 
 |:---: | :---: | :---: |
@@ -80,4 +92,5 @@ Age | BHB-10K | BSNIP (**only HC**)
 Sex | BHB-10K | BSNIP (**only HC**)
 SCZ vs HC | SCHIZCONNECT-VIP | BSNIP 
 
+</div>
 

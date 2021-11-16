@@ -18,18 +18,18 @@ phone:
 
 # Index
 short_desc: BHB-10K dataset
-long_desc: As of today, Big Healthy Brains (BHB)-10K dataset is an aggregation of 13 publicly available datasets of 3D T1 brain MRI scans of healthy controls (HC) acquired on more than 70 different scanners and comprising N=10K individuals All datasets are pre-processed uniformaly comprising VBM, Quasi-Raw, ... This study is intended to be extended in the future. Please refer to the roadmap to get an overall view of the BHB-10K evolution plan.
+long_desc: As of today, Big Healthy Brains (BHB)-10K dataset is an aggregation of 13 publicly available datasets of 3D T1 brain MRI scans of healthy controls (HC) acquired on more than 70 different scanners and comprising N=10K individuals. All datasets are pre-processed uniformaly comprising VBM, Quasi-Raw, FreeSurfer ... The main objective of this project is to provide to the community a collaborative neuroimaging benchmarking resource. This study is intended to be extended in the future. Please refer to the roadmap to get an overall view of the BHB evolution plan.
 
 # Expiration in days
 expiration_opportunities: 200
 expiration_news: 300
 
 # Social settings
-500px_url: http://www.neurospin-wiki.org/pmwiki/Main/DirectionsToNeurospin
-facebook_url: https://www.facebook.com/pages/NeuroSpin/171075046414933
+neurospin_url: https://joliot.cea.fr/drf/joliot/Pages/Entites_de_recherche/NeuroSpin.aspx
+#facebook_url: https://www.facebook.com/pages/NeuroSpin/171075046414933
 github_url: https://github.com/neurospin
-twitter_url: https://twitter.com/neurospin_91
-youtube_url: https://www.youtube.com/CEASaclay
+#twitter_url: https://twitter.com/neurospin_91
+#youtube_url: https://www.youtube.com/CEASaclay
 map_url: https://www.google.fr/maps/@48.720535,2.1467526,16z?hl=en
 
 # Sass building

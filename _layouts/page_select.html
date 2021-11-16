@@ -72,7 +72,7 @@ $(document).ready(function() {
             {% assign key = item | replace: "~", "" %}
             content += "<option value='{{key|downcase|replace: " ", "-"}}'>{{key|upcase}}</option>"
         {% else %}
-            content += "<option value='{{item|downcase|replace: " ", "-"}}'>&nbsp;&nbsp;&nbsp;&nbsp;{{item|downcase}}</option>"
+            content += "<option value='{{item|downcase|replace: " ", "-"}}'>&nbsp;&nbsp;&nbsp;&nbsp;{{item|upcase}}</option>"
         {% endif %}       
     {% endfor %}
     $(".dropdown-menu").html(content)

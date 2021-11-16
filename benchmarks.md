@@ -37,14 +37,16 @@ We stratified according to the label to predict. The hyperparameters for the lin
 #### Learning curves
 
 **VBM**
-![Alt text](images/resources/benchmarks_age_sex_vbm.png)
+<span class="image main"><img src="{{site.url}}{{site.baseurl}}/images/resources/benchmarks_age_sex_vbm.png" alt="" /></span>
 
 **Quasi-Raw**
-![Alt text](images/resources/benchmarks_age_sex_raw.png)
+<span class="image main"><img src="{{site.url}}{{site.baseurl}}/images/resources/benchmarks_age_sex_raw.png" alt="" /></span>
 
 **Note:**  linear models give results no better than chance with quasi-raw data.
 
 #### Linear model baseline
+
+<div style="overflow-x:scroll" markdown="1">
 
 **Task** | **Model** | **# Training Samples**| **Pre-Processing** | **AUC**(%) | **MAE**
 |:---: | :---: |:---: | :---: | :---: | :---: |
@@ -52,10 +54,14 @@ Age | Ridge | 10K |  VBM | N/A | 4.65±0.02
 Sex | Logistic | 10K | VBM  | 97.05±0.03   | N/A
 SCZ vs HC | Logistic | 500 | VBM | 78.71±0.76 | N/A
 
+</div>
+
 #### CNN models
 
 The models are trained for 300 epochs at N=10K and for 100 epochs at N=500. We use Deep Ensemble with T=5
 CNN to have accurate and better calibrated models. 
+
+<div style="overflow-x:scroll" markdown="1">
 
 **Task** | **Model** | **# Training Samples**|  **Deep Ensemble (x5)** | **Pre-Processing** |**Weights**
 |:---: | :---: | :---: | :---: | :---: | :---: |
@@ -66,7 +72,11 @@ Sex | DenseNet121 | 10K |  ❌️ | Quasi-Raw  | [download]()
 SCZ vs HC | tiny-DenseNet | 500 |  ✔️ | VBM |  [download]()
 SCZ vs HC | DenseNet121 |500 |  ✔️ | Quasi-Raw | [download]()
 
+</div>
+
 #### Test on BSNIP
+
+<div style="overflow-x:scroll" markdown="1">
 
 **Task** | **Model** | **Pre-Processing** | **AUC** | **MAE**
 |:---: | :---: | :---: | :---: | :---: |
@@ -76,3 +86,5 @@ Sex | DenseNet121 | VBM | **97.69±0.21** | N/A
 Sex | DenseNet121 | Quasi-Raw | 96.58±0.21 | N/A
 SCZ vs HC | tiny-DenseNet ️ | VBM | **80.92±0.47**| N/A
 SCZ vs HC | DenseNet121 | Quasi-Raw | 71.98±1.49 | N/A
+
+</div>

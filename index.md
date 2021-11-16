@@ -7,7 +7,7 @@ permalink: /index.html
 
 ## Contents
 
-The content of the site is outlined below and can also be accessed using the top left navigation bar.
+The content of the site is outlined below and can also be accessed using the top left navigation bar:
 
 1. [Dataset]({{site.url}}{{site.baseurl}}/dataset)
 2. [Challenges]({{site.url}}{{site.baseurl}}/challenges)
@@ -17,12 +17,19 @@ The content of the site is outlined below and can also be accessed using the top
 6. [Collaborators]({{site.url}}{{site.baseurl}}/collaborators)
 7. [Roadmap]({{site.url}}{{site.baseurl}}/roadmap)
 
+## Important links
 
-## Benchmarking deep learning models on brain MRI BHB-10K dataset
+The important links are listed below:
 
-The idea of the BHB project is to provide the community with a large benchmarking dataset.
-For this purpose, the project hosts state-of-the-art CNN models implemented in Pytorch that are used as baselines for different challenges such as age and sex prediction.
+1. Preprocessing and quality control using container technologies: [brainprep](https://brainprep.readthedocs.io).
+2. Data download: [openBHB](https://zenodo.org).
 
+
+## Collaborative benchmarking
+
+The primary idea of the BHB project is to provide to the community a [large benchmarking dataset]({{site.url}}{{site.baseurl}}/dataset).
+The dataset is splitted in two: 1) the openBHB dataset that is publicaly available for participants to train new models, and 2) the privateBHB dataset that is used to compare the performances of the submitted models.
+The submitted models are ranked in the [benchmarks section]({{site.url}}{{site.baseurl}}/benchmarks) and form the baselines for the different challenges.
 
 
 {% assign challenges_sorted = site.challenges | sort: 'added' | reverse  %}
