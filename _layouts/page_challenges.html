@@ -42,11 +42,12 @@
                         {% for item in challenges_sorted %}
                           <article>
                             <h3>{{ item.title }}: {{item.headline}}</h3>
-                            <a href="{{item.ramp_url}}" class="image"><img src="{{site.url}}{{site.baseurl}}/images/resources/{{item.icon}}" alt="" /></a>
+                            <a href="{{item.url}}" class="image"><img src="{{site.url}}{{site.baseurl}}/images/resources/{{item.icon}}" alt="" /></a>
                             <p>{{ item.teasing }}</p>
                             <ul class="actions">
                                 <center>
-                                <li><a href="{{item.ramp_url}}" class="button medium">More</a></li>
+                                <li><a href="{{item.url}}" class="button medium">More info</a></li>
+                                <li><a href="{{item.challenge_url}}" class="button medium">Challenge page</a></li>
                                 </center>
                             </ul>
                           </article>

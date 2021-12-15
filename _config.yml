@@ -17,8 +17,8 @@ country: France
 phone:
 
 # Index
-short_desc: BHB-10K dataset
-long_desc: As of today, Big Healthy Brains (BHB)-10K dataset is an aggregation of 13 publicly available datasets of 3D T1 brain MRI scans of healthy controls (HC) acquired on more than 70 different scanners and comprising N=10K individuals. All datasets are pre-processed uniformaly comprising VBM, Quasi-Raw, FreeSurfer ... The main objective of this project is to provide to the community a collaborative neuroimaging benchmarking resource. This study is intended to be extended in the future. Please refer to the roadmap to get an overall view of the BHB evolution plan.
+short_desc: openBHB dataset
+long_desc: As of today, Big Healthy Brains (BHB) dataset is an aggregation of 10 publicly available datasets of 3D T1 brain MRI scans of healthy controls (HC) acquired on more than 70 different scanners and comprising N=5K individuals. All datasets are pre-processed uniformaly comprising VBM, Quasi-Raw, FreeSurfer ... The main objective of this project is to provide to the community a collaborative neuroimaging benchmarking resource. This study is intended to be extended in the future. Please refer to the roadmap to get an overall view of the openBHB evolution plan.
 
 # Expiration in days
 expiration_opportunities: 200
@@ -62,8 +62,4 @@ collections:
   biblio:
     output    : true
     permalink : /biblio/:title/index.html
-
-  benchmarks:
-    output    : true
-    permalink : /research/:title/index.html
 

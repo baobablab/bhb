@@ -1,6 +1,6 @@
 ---
 layout: page_challenges
-title: BHB-10K challenges
+title: openBHB challenges
 cat: dataset
 subcat: overview
 ---

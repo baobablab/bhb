@@ -1,6 +1,6 @@
 ---
-title: The gender prediction challenge is now open!
+title: The brain age prediction with site-effect removal challenge is now open!
 desc:
 ext_url: https://ramp.studio
-date: 2021-12-01
+date: 2021-12-24
 ---
