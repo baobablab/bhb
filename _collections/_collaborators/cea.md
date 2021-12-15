@@ -1,5 +1,5 @@
 ---
-name: CEA NeuroSpin
+name: CEA NeuroSpin, Localizer
 subcat: academic
 contact: 
 avatar: neurospin_logo.png
