@@ -43,11 +43,11 @@ All challenges built upon the openBHB dataset are described in the [challenges s
     {% for item in challenges_sorted limit: 6 %}
       <article>
         <h3>{{ item.title }}</h3>
-        <a href="{{item.url}}" class="image"><img src="{{site.url}}{{site.baseurl}}/images/resources/{{item.icon}}" alt="" /></a>
+        <a href="{{site.url}}{{site.baseurl}}/{{item.url}}" class="image"><img src="{{site.url}}{{site.baseurl}}/images/resources/{{item.icon}}" alt="" /></a>
         <p>{{ item.teasing }}</p>
         <ul class="actions">
             <center>
-            <li><a href="{{item.url}}" class="button medium">More info</a></li>
+            <li><a href="{{site.url}}{{site.baseurl}}/{{item.url}}" class="button medium">More info</a></li>
             <li><a href="{{item.challenge_url}}" class="button medium">Challenge page</a></li>
             </center>
         </ul>
