@@ -28,6 +28,8 @@ in different institutions & companies.
     <h3>Hospitals</h3>
 {% elsif item == 'company' %}
     <h3>Companies</h3>
+{% elsif item == 'software' %}
+    <h3>Open Source Softwares</h3>
 {% elsif item == 'study' %}
     <h3>Aggregated Studies</h3>
 {% endif %}

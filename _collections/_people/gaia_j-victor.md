@@ -1,7 +1,7 @@
 ---
 layout:
 name: Julie Victor
-position: gradstudent
+position: engineer
 cat: gaia
 subcat: platform
 avatar:

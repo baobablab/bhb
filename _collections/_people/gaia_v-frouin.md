@@ -4,7 +4,9 @@ name: Vincent Frouin
 position: pi
 cat: gaia
 subcat: pi
-avatar:
+avatar: v-frouin.png
+site: https://brainomics.org
 joined: 2006
 ---
+
 

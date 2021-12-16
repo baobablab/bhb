@@ -5,8 +5,21 @@ entry: people
 permalink: /people.html
 ---
 
+{% assign people_sorted = site.people | sort: 'position' %}
+{% assign people_array = 'pi' | split: ',' %}
+{% for profile in people_sorted %}
+  <!-- If not equal to previous then it must be unique as sorted -->
+  {% if profile.position == "pi"  %}
+    {% continue %}
+  {% endif %}
+  {% unless profile.position == previous %}
+    {% assign people_array = people_array | push: profile.position %}
+  {% endunless %}
+  {% assign previous = profile.position %}
+{% endfor %}
 {% assign people_sorted = site.people | sort: 'joined' %}
-{% assign people_array = "pi|postdoc|gradstudent|engineer|alumni" | split: "|" %}
+
+{{people_array}}
 
 {% for item in people_array %}
 
