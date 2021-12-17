@@ -14,7 +14,7 @@ added: 2021
 ### Link to the challenge
 
 The challenge is available here: [RAMP.studio](https://ramp.studio/).
-
+The code of the challenge is available here: [RAMP.kits](https://github.com/ramp-kits/brain_age_with_site_removal).
 
 ### Contents
 
