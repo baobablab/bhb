@@ -5,7 +5,7 @@ cat: regression
 subcat: age
 headline: 
 teasing: A challenge on the openBHB dataset that aims to i) predict age from derived 3D T1w anatomical MRI data while ii) removing site/scanner information from the learned representation.
-challenge_url: https://ramp.studio
+challenge_url: https://ramp.studio/events/brain_age_with_site_removal_open_2022
 icon: age_prediction_with_site_removal.jpg
 image: age_prediction_with_site_removal.jpg
 added: 2021
@@ -13,7 +13,7 @@ added: 2021
 
 ### Link to the challenge
 
-The challenge is available here: [RAMP.studio](https://ramp.studio/).
+The challenge is available here: [RAMP.studio](https://ramp.studio/events/brain_age_with_site_removal_open_2022).
 The code of the challenge is available here: [RAMP.kits](https://github.com/ramp-kits/brain_age_with_site_removal).
 
 ### Contents
