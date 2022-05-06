@@ -3,7 +3,7 @@ cat: bhb
 subcat: data
 bestof: true
 author: B. Dufumier et al.
-title: OpenBHB - a Large-Scale Multi-Site Brain MRI Data-set for Age Prediction and Debiasin
+title: OpenBHB - a Large-Scale Multi-Site Brain MRI Data-set for Age Prediction and Debiasing
 journal: Submitted to NeuroImage
 year: 2022
 type: article
