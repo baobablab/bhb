@@ -19,13 +19,23 @@ The challenge is available here: [RAMP.studio](https://ramp.studio/).
 ### Contents
 
 1. [Challenge description](#challenge-description)
-2. [Metrics](#metrics)
-3. [Baselines](#baselines)
+2. [Ranking of the best models](#ranking-of-the-best-models)
+3. [Metrics](#metrics)
+4. [Baselines](#baselines)
 
 
 ### Challenge description
 
 The challenge uses the openBHB dataset and aims to i) predict age from derived data from 3D T1 anatomical MRI while ii) removing site information from the learned representation. Thus, we aim to compare the capacity of proposed models to encode a relevant representation of the data (feature extraction and dimensionality reduction) that preserve the biological variability associated with age while removing the site-specific information. The algorithms submitted must output a low-dimension features vector (p < 10000). Derived data are composed of Quasi-Raw, VBM, and SBM.
+
+
+### Ranking of the best models
+
+
+|   rank | team     | submission         |   challenge_metric |   train time [s] |   validation time [s] | submitted at (UTC)   |
+|-------:|:---------|:-------------------|-------------------:|-----------------:|----------------------:|:---------------------|
+|      1 | dufumier | VBM-AlexNet-ComBat |              0.268 |          3232.82 |               2651.88 | 2022-06-17 17:34:21  |
+|      2 | frcaud   | starting_kit_aws01 |              0.095 |          6084.69 |               3149.87 | 2022-05-04 08:05:51  |
 
 
 ### Metrics
