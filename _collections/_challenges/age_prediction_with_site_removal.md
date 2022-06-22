@@ -33,11 +33,16 @@ The challenge uses the openBHB dataset and aims to i) predict age from derived d
 
 Last update: 22/06/2022
 
+<div style="overflow-x:scroll" markdown="1">
+
 |   rank |   move | team     | submission         |   challenge_metric |   train time [s] |   validation time [s] |   test time [s] | submitted at (UTC)   |
 |-------:|-------:|:---------|:-------------------|-------------------:|-----------------:|----------------------:|----------------:|:---------------------|
 |      1 |      1 | frcaud   | starting_kit_aws01 |              0.573 |          6084.69 |               3149.87 |         1548.43 | 2022-05-04 08:05:51  |
 |      2 |     -1 | dufumier | VBM-AlexNet-ComBat |              0.398 |          3232.82 |               2651.88 |         1412.39 | 2022-06-17 17:34:21  |
 
+</div><br/>
+
+<div style="overflow-x:scroll" markdown="1">
 
 |   submission ID | team     | submission         |   bag public challenge_metric |   mean public challenge_metric |   std public challenge_metric |   bag public mae_age |   mean public mae_age |   std public mae_age |   bag public rmse_age |   mean public rmse_age |   std public rmse_age |   bag public bacc_site |   mean public bacc_site |   std public bacc_site |   bag public ext_mae_age |   mean public ext_mae_age |   std public ext_mae_age |   bag private challenge_metric |   mean private challenge_metric |   std private challenge_metric |   bag private mae_age |   mean private mae_age |   std private mae_age |   bag private rmse_age |   mean private rmse_age |   std private rmse_age |   bag private bacc_site |   mean private bacc_site |   std private bacc_site |   bag private ext_mae_age |   mean private ext_mae_age |   std private ext_mae_age |   train time [s] |   validation time [s] |   test time [s] |   max RAM [MB] | submitted at (UTC)   |
 |----------------:|:---------|:-------------------|------------------------------:|-------------------------------:|------------------------------:|---------------------:|----------------------:|---------------------:|----------------------:|-----------------------:|----------------------:|-----------------------:|------------------------:|-----------------------:|-------------------------:|--------------------------:|-------------------------:|-------------------------------:|--------------------------------:|-------------------------------:|----------------------:|-----------------------:|----------------------:|-----------------------:|------------------------:|-----------------------:|------------------------:|-------------------------:|------------------------:|--------------------------:|---------------------------:|--------------------------:|-----------------:|----------------------:|----------------:|---------------:|:---------------------|
@@ -48,6 +53,7 @@ Last update: 22/06/2022
 |           13166 | dufumier | VBM-AlexNet-ComBat |                         0.268 |                       0.211    |                      0.016703 |                1.93  |              2.104    |             0.04015  |                 2.916 |                3.08467 |              0.085489 |                  0.104 |                0.086333 |               0.008145 |                    2.29  |                  2.05933  |                 0.096417 |                          0.398 |                        0.407333 |                       0.008145 |                 3.386 |                3.37067 |              0.013279 |                  4.773 |                 4.75667 |               0.017039 |                   0.065 |                 0.068    |                0.003    |                     5.294 |                    5.22633 |                  0.123314 |         3232.82  |              2651.88  |        1412.39  |              0 | 2022-06-17 17:34:21  |
 |           13165 | dufumier | VBM-ResNet18       |                         0.069 |                       0.068333 |                      0.001528 |                0.738 |              0.734    |             0.058207 |                 1.178 |                1.31367 |              0.226588 |                  0.078 |                0.073667 |               0.003512 |                    0.744 |                  0.775667 |                 0.007572 |                          0.318 |                        0.323333 |                       0.004726 |                 2.669 |                2.67167 |              0.004619 |                  3.778 |                 3.78167 |               0.006351 |                   0.066 |                 0.067333 |                0.001155 |                     4.169 |                    4.18233 |                  0.012583 |         4526.6   |              2903.9   |        1512.07  |              0 | 2022-06-17 11:07:31  |
 
+</div><br/>
 
 ### Metrics
 
@@ -59,7 +65,7 @@ To rank submissions, we have developed a novel metric that jointly evaluates 2 k
 ### Baselines
         
 We performed baseline experiments,a nd trained CNNs with various architectures on whole-brain measures (VBM and Quasi-Raw). The objective function is a simple l1-loss on age prediction for all models. 
-We tested ComBat data-based debiasing models,that correponds to classical harmonization of the training set (test sets are left unharmonized since age and site labels are not available). We reported the 3 metrics used in the challenge: MAE on the openBHB and privateBHB test sets and Bacc for site prediction. The latent space dimension varied across CNN architectures and it is always reported.
+We tested ComBat data-based debiasing models, that correponds to classical harmonization of the training set (test sets are left unharmonized since age and site labels are not available). We reported the 3 metrics used in the challenge: MAE on the openBHB and privateBHB test sets and Bacc for site prediction. The latent space dimension varied across CNN architectures and it is always reported.
 
 <div style="overflow-x:scroll" markdown="1">
 
