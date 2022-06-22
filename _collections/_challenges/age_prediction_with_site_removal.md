@@ -31,6 +31,7 @@ The challenge uses the openBHB dataset and aims to i) predict age from derived d
 
 ### Ranking of the best models
 
+Last update: 22/06/2022
 
 |   rank | team     | submission         |   challenge_metric |   train time [s] |   validation time [s] | submitted at (UTC)   |
 |-------:|:---------|:-------------------|-------------------:|-----------------:|----------------------:|:---------------------|
